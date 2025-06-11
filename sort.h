@@ -25,6 +25,14 @@ void print_list(const listint_t *list);
 /* Sorting functions */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
-void selection_sort(int *array, size_t size); /* New function prototype */
+/**
+ * selection_sort - Sorts an array of integers in ascending order
+ * using the Selection sort algorithm.
+ * @array: The array to be sorted.
+ * @size: The number of elements in the array.
+ *
+ * Return: void.
+ */
+void selection_sort(int *array, size_t size);
 
 #endif /* SORT_H */
