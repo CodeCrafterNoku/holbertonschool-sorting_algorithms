@@ -2,7 +2,7 @@
 #define SORT_H
 
 #include <stddef.h> /* For size_t */
-#include <stdio.h>  /* For printf (used in print_list) */
+#include <stdio.h>  /* For printf (used in print_array/print_list) */
 
 /**
  * struct listint_s - Doubly linked list node
@@ -25,5 +25,6 @@ void print_list(const listint_t *list);
 /* Sorting functions */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size); /* New function prototype */
 
 #endif /* SORT_H */
